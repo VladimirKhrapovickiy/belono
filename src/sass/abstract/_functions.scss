@@ -3,3 +3,7 @@
     $remSize: math.div($size, 16px);
     @return #{$remSize}rem;
 }
+@function vw($size) {
+    $vwSize: math.div($size, 14.4px);
+    @return #{$vwSize}vw;
+}

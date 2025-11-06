@@ -1,0 +1,67 @@
+h1{
+    font-family: "TT Norms";
+    font-size: 56px;
+    font-weight: 500;
+    letter-spacing: -2px;
+    line-height: 90%;
+}
+h2{
+    font-family: "TT Norms";
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: -2px;
+    line-height: 100%;
+}
+h3{
+    font-family: "TT Norms";
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -2px;
+    line-height: 110%;
+}
+h4{
+    font-family: "TT Norms";
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: 100%;
+}
+h5{
+    font-family: "TT Norms";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+}
+.txt-big{
+    font-family: "TT Norms";
+    font-size: 16px;
+    line-height: 120%;
+}
+body{
+    font-family: "TT Norms";
+    font-size: vw(14px);
+    line-height: 120%;
+    font-weight: 400;
+}
+.caption{
+    font-family: "TT Norms";
+    font-size: vw(12px);
+    line-height: 120%;
+}
+.txt-right{
+    text-align: right;
+}
+.section-title{
+    font-size: vw(56px);
+    max-width: vw(560px);
+    display: block;
+    margin: 0 auto vw(40px);
+}
+.section-subtitle{
+    text-transform: uppercase;
+    color: $color-accent;
+    font-size: vw(16px);
+    margin-bottom: 4px;
+    font-weight: 500;
+    text-align: center;
+}

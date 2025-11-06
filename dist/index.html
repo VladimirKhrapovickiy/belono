@@ -6,8 +6,351 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
-    <h1>HELLO TO THE NEW PROJECT</h1>
+<body class="slideshow">
+<header>
+    <div class="container">
+        <div class="row">
+            <img src="./icons/logo.svg" alt="логотип" class="header__logo">
+            <div class="header__burger">
+                <img src="./icons/burger.svg" alt="бургер меню" class="header__burger-icon">
+            </div>
+            <div class="header__right">
+                <div class="header__social">
+                    <img src="./icons/wa_icon.svg" alt="whatsapp">
+                    <img src="./icons/vk_icon.svg" alt="vkontakte">
+                    <img src="./icons/tg_icon.svg" alt="telegramm">
+                </div>
+                <div class="header__cart">
+                    <img src="./icons/cart_icon.svg" alt="корзина">
+                    <span>Корзина</span>
+                </div>
+                <div class="header__login">
+                    <img src="./icons/login_icon.svg" alt="личный кабинет">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+ <main>
+    <section class="main-screen slide-section">
+        <div class="container">
+            <h1 class="main-screen__title">Открой комфорт <br><span class="txt-right">вместе с BELONO</span></h1>
+            <p class="main-screen__txt">Создайте в своём доме атмосферу уюта и свежести с нашими пластиковыми цветочными горшками. Они лёгкие, прочные и стильные, идеально подходят для любых растений и помогут вам сохранить порядок и красоту в вашем пространстве.</p>
+            <div class="main-screen__pots">
+                <img src="/img/pots.png" alt="горшки" class="main-screen__pots-img">
+            </div>
+            <div class="main-screen__bottom">
+                <div class="main-screen__reviews">
+                    <div class="reviews__imgs"> 
+                        <img src="/img/review_1.png" alt="фото клиента" class="reviews__imgs-1">
+                        <img src="/img/review_2.png" alt="фото клиента" class="reviews__imgs-2">
+                    </div>
+                    <span class="reviews__count">+250</span>
+                    <div class="reviews__txt">отзывов на основе <a href="#">wildberries</a> и <a href="#">ozon</a></div>
+                </div>
+                <div class="main-screen__advantages">
+                    <div class="advantage">Долговечность</div>
+                    <div class="advantage">Экологичность</div>
+                    <div class="advantage">Удобство</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="categories slide-section">
+        <div class="container">
+            <div class="section-subtitle categories__subtitle">Категории товаров</div>
+            <h2 class="section-title categories__title">Выбор для домашних и садовых растений </h2>
+            <ul class="categories__list">
+                <li class="category category_active">
+                    <img src="/img/category_1.png" alt="горшки" class="category__background">
+                    <div class="category__filter"></div>
+                    <div class="category__tag">Для дома</div>
+                    <div class="category__info">
+                        <div class="category__name">Кашпо</div>
+                        <div class="category__bottom">
+                            <div class="category__txt">Создайте в своём доме атмосферу уюта Создайте в своём доме атмосферу уюта Создайте в своём доме атмосферу уюта </div>
+                            <img src="/img/arrow_green.svg" alt="стрелка" class="category__arrow">
+                        </div>
+                    </div>
+                </li>
+                <li class="category">
+                    <img src="/img/category_2.png" alt="горшки" class="category__background">
+                    <div class="category__filter"></div>
+                    <div class="category__tag">Для дома</div>
+                    <div class="category__info">
+                        <div class="category__name">Цилиндры</div>
+                        <div class="category__bottom">
+                            <div class="category__txt">Создайте в своём доме атмосферу уюта Создайте в своём доме атмосферу уюта Создайте в своём доме атмосферу уюта </div>
+                            <img src="/img/arrow_green.svg" alt="стрелка" class="category__arrow">
+                        </div>
+                    </div>
+                </li>
+                <li class="category">
+                    <img src="/img/category_3.png" alt="горшки" class="category__background">
+                    <div class="category__tag">Для дома и офиса</div>
+                    <div class="category__filter"></div>
+                    <div class="category__info">
+                        <div class="category__name">Классика</div>
+                        <div class="category__bottom">
+                            <div class="category__txt">Создайте в своём доме атмосферу уюта Создайте в своём доме атмосферу уюта Создайте в своём доме атмосферу уюта </div>
+                            <img src="/img/arrow_green.svg" alt="стрелка" class="category__arrow">
+                        </div>
+                    </div>
+                </li>
+                <li class="category">
+                    <img src="/img/category_4.png" alt="горшки" class="category__background">
+                    <div class="category__tag">Для дома, улицы</div>
+                    <div class="category__filter"></div>
+                    <div class="category__info">
+                        <div class="category__name">Технические</div>
+                        <div class="category__bottom">
+                            <div class="category__txt">Создайте в своём доме атмосферу уюта Создайте в своём доме атмосферу уюта Создайте в своём доме атмосферу уюта </div>
+                            <img src="/img/arrow_green.svg" alt="стрелка" class="category__arrow">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="chars slide-section">
+        <div class="container">
+            <div class="section-subtitle chars__subtitle">Характеристики продукции</div>
+            <h2 class="section-title chars__title">Качество  — в деталях!</h2>
+            <div class="shema">
+                <img src="./img/pot_shema.png" alt="схема горшка" class="shema__img">
+                <ul class="shema__adv-list">
+                    <li class="shema__adv-item shema__adv-item_1">
+                        <div class="shema__adv-number shema__adv-number-left">
+                            <svg class="shema__adv-bg" version="1.0" fill-opacity="0.24" xmlns="http://www.w3.org/2000/svg" width="66.667" height="66.667" viewBox="0 0 50 50"><path d="M18.8 2.6c-2.9.9-6.8 3.3-10.3 6.6-3.3 3-6 4.7-6.5 4.2S1 10.5.7 8C.5 5.5.4 14.1.4 27s.1 20.6.3 17c.2-3.6.8-6.9 1.3-7.4.6-.6 2.9.9 6 3.8 6.4 6 10.9 7.9 18.5 7.9 13.3.1 22.8-9.7 22.9-23.3.1-10.9-6.1-19.4-16.6-22.5-6.2-1.8-7.9-1.8-14 .1z" fill="#000000"/></svg>
+                            <span>1</span>
+                        </div>
+                        <img src="./img/adv_ico.png" alt="знак отличия" class="shema__adv-ico">
+                        <div class="shema__adv-content">
+                            <p class="shema__adv-name">Преимущество 1</p>
+                            <p class="shema__adv-txt">Создайте в своём доме атмосферу уюта и свежести с нашими пластиковыми цветочными горшками.</p>
+                        </div>
+                    </li>
+                    <li class="shema__adv-item shema__adv-item_2">
+                        <div class="shema__adv-number">
+                            <svg class="shema__adv-bg" fill-opacity="0.24" version="1.0" xmlns="http://www.w3.org/2000/svg" width="66.667" height="66.667" viewBox="0 0 50 50"><path d="M18.8 2.6c-2.9.9-6.8 3.3-10.3 6.6-3.3 3-6 4.7-6.5 4.2S1 10.5.7 8C.5 5.5.4 14.1.4 27s.1 20.6.3 17c.2-3.6.8-6.9 1.3-7.4.6-.6 2.9.9 6 3.8 6.4 6 10.9 7.9 18.5 7.9 13.3.1 22.8-9.7 22.9-23.3.1-10.9-6.1-19.4-16.6-22.5-6.2-1.8-7.9-1.8-14 .1z" fill="#000000"/></svg>
+                            <span>2</span>
+                        </div>
+                        <img src="./img/adv_ico.png" alt="знак отличия" class="shema__adv-ico">
+                        <div class="shema__adv-content">
+                            <p class="shema__adv-name">Преимущество 2</p>
+                            <p class="shema__adv-txt">Создайте в своём доме атмосферу уюта и свежести с нашими пластиковыми цветочными горшками.</p>
+                        </div>
+                    </li>
+                    <li class="shema__adv-item shema__adv-item_3">
+                        <div class="shema__adv-number">
+                            <svg class="shema__adv-bg" fill-opacity="0.24" version="1.0" xmlns="http://www.w3.org/2000/svg" width="66.667" height="66.667" viewBox="0 0 50 50"><path d="M18.8 2.6c-2.9.9-6.8 3.3-10.3 6.6-3.3 3-6 4.7-6.5 4.2S1 10.5.7 8C.5 5.5.4 14.1.4 27s.1 20.6.3 17c.2-3.6.8-6.9 1.3-7.4.6-.6 2.9.9 6 3.8 6.4 6 10.9 7.9 18.5 7.9 13.3.1 22.8-9.7 22.9-23.3.1-10.9-6.1-19.4-16.6-22.5-6.2-1.8-7.9-1.8-14 .1z" fill="#000000"/></svg>
+                            <span>3</span>
+                        </div>
+                        <img src="./img/adv_ico.png" alt="знак отличия" class="shema__adv-ico">
+                        <div class="shema__adv-content">
+                            <p class="shema__adv-name">Преимущество 3</p>
+                            <p class="shema__adv-txt">Создайте в своём доме атмосферу уюта и свежести с нашими пластиковыми цветочными горшками.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="recomended slide-section">
+        <div class="container">
+            <div class="recomended__top">
+                <div class="recomended__titles">
+                    <div class="section-subtitle recomended__subtitle">Наша продукция</div>
+                    <h2 class="section-title recomended__title">Лучшие товары премиум-класса</h2>
+                </div>
+                <a href="/#" class="recomended__link">Смотреть все</a>
+            </div>
+            <div class="recomended__products">
+                <div class="product">
+                    <a href="#" class="product__category">Цилиндры</a>
+                    <img src="./img/product_1.png" alt="" class="product__img">
+                    <div class="product__bottom">
+                        <div class="product__info">
+                            <p class="product__name">Belono Classic 45 см</p>
+                            <p class="product__price">500 руб.</p>
+                        </div>
+                        <a href="#" class="product__btn"><img src="./img/arrow_black.png" alt="стрелка" class="arrow-black"></a>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="#" class="product__category">Цилиндры</a>
+                    <img src="./img/product_2.png" alt="" class="product__img">
+                    <div class="product__bottom">
+                        <div class="product__info">
+                            <p class="product__name">Belono Classic 45 см</p>
+                            <p class="product__price">500 руб.</p>
+                        </div>
+                        <a href="#" class="product__btn"><img src="./img/arrow_black.png" alt="стрелка" class="arrow-black"></a>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="#" class="product__category">Цилиндры</a>
+                    <img src="./img/product_3.png" alt="" class="product__img">
+                    <div class="product__bottom">
+                        <div class="product__info">
+                            <p class="product__name">Belono Classic 45 см</p>
+                            <p class="product__price">500 руб.</p>
+                        </div>
+                        <a href="#" class="product__btn"><img src="./img/arrow_black.png" alt="стрелка" class="arrow-black"></a>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="#" class="product__category">Цилиндры</a>
+                    <img src="./img/product_4.png" alt="" class="product__img">
+                    <div class="product__bottom">
+                        <div class="product__info">
+                            <p class="product__name">Belono Classic 45 см</p>
+                            <p class="product__price">500 руб.</p>
+                        </div>
+                        <a href="#" class="product__btn"><img src="./img/arrow_black.png" alt="стрелка" class="arrow-black"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallary slide-section">
+        <div class="container">
+            <div class="section-subtitle gallary__subtitle">Галерея</div>
+            <h2 class="section-title gallary__title">Воплощаем ваши идеи в реальность</h2>
+            <div class="gallary__list">
+                <div class="gallary__item">
+                    <img src="./img/gallary_1.png" alt="горшок" class="gallary__item-bg">
+                    <div class="gallary__item-info">
+                        <div class="gallary__item-info-cat">Цилиндры</div>
+                        <img src="./img/gallary_inner.png" alt="" class="gallary__item-info-img">
+                        <div class="gallary__item-info-bottom">
+                            <div class="gallary__item-info-name">Наименование товара</div>
+                            <svg class="gallary__item-info-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.49811 9.28924L17.2181 9.2901M17.2181 9.2901L9.37232 17.2471M17.2181 9.2901L9.47065 1.54267" stroke="#5F760F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallary__item">
+                    <img src="./img/gallary_2.png" alt="горшок" class="gallary__item-bg">
+                    <div class="gallary__item-info">
+                        <div class="gallary__item-info-cat">Цилиндры</div>
+                        <img src="./img/gallary_inner.png" alt="" class="gallary__item-info-img">
+                        <div class="gallary__item-info-bottom">
+                            <div class="gallary__item-info-name">Наименование товара</div>
+                            <svg class="gallary__item-info-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.49811 9.28924L17.2181 9.2901M17.2181 9.2901L9.37232 17.2471M17.2181 9.2901L9.47065 1.54267" stroke="#5F760F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallary__item">
+                    <img src="./img/gallary_3.png" alt="горшок" class="gallary__item-bg">
+                    <div class="gallary__item-info">
+                        <div class="gallary__item-info-cat">Цилиндры</div>
+                        <img src="./img/gallary_inner.png" alt="" class="gallary__item-info-img">
+                        <div class="gallary__item-info-bottom">
+                            <div class="gallary__item-info-name">Наименование товара</div>
+                            <svg class="gallary__item-info-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.49811 9.28924L17.2181 9.2901M17.2181 9.2901L9.37232 17.2471M17.2181 9.2901L9.47065 1.54267" stroke="#5F760F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq slide-section">
+        <div class="container">
+            <div class="faq__top">
+                <div class="">                
+                    <div class="section-subtitle faq__subtitle">О нас</div>
+                    <h2 class="section-title faq__title">Узнайте больше о BELONO</h2>
+                </div>
+                <p class="faq__txt">
+                    Найдите ответы на наиболее часто задаваемые вопросы о его расширенных функциях, о том, как его использовать и обслуживать, а также о том, почему он является идеальным выбором для вас в помещении
+                </p>
+            </div>
+            <div class="faq__left">
+                <img src="./img/faq_img.png" alt="горшки" class="faq__img">
+                <p class="faq__txt">
+                    Создавая комфорт и уют в вашем доме, предлагая современные решения для оформления пространства с помощью стильных и практичных пластиковых кашпо, которые подчеркнут красоту ваших растений и создадут гармонию в вашем интерьере.
+                </p>
+                <a href="#" class="faq__btn">
+                    <span>О нас</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.125 15.7874L16.2989 3.26563M16.2989 3.26563V16.3091M16.2989 3.26563L4.125 3.26562" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="faq__right">
+                <div class="faq__item faq__item-active">
+                    <div class="faq__item-top">
+                        <span class="faq__item-question">Какие виды пластиковых горшков вы производите?</span>
+                        <svg class="faq__item-arrow" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="24" fill="#EDF4E7"/>
+                            <path d="M23.6005 15.6641L23.5996 33.1308M23.5996 33.1308L14.7585 24.4132M23.5996 33.1308L32.2078 24.5225" stroke="#1D1D1B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="faq__item-answer">
+                        Мы выпускаем широкий ассортимент пластиковых горшков: классические, декоративные, с автополивом, подвесные и кашпо разных форм и размеров для дома, офиса и сада.
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__item-top">
+                        <span class="faq__item-question">Из какого материала изготавливаются ваши горшки?</span>
+                        <svg class="faq__item-arrow" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="24" fill="#EDF4E7"/>
+                            <path d="M23.6005 15.6641L23.5996 33.1308M23.5996 33.1308L14.7585 24.4132M23.5996 33.1308L32.2078 24.5225" stroke="#1D1D1B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="faq__item-answer">
+                        Мы выпускаем широкий ассортимент пластиковых горшков: классические, декоративные, с автополивом, подвесные и кашпо разных форм и размеров для дома, офиса и сада.
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__item-top">
+                        <span class="faq__item-question">Можно ли ваши горшки использовать на улице?</span>
+                        <svg class="faq__item-arrow" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="24" fill="#EDF4E7"/>
+                            <path d="M23.6005 15.6641L23.5996 33.1308M23.5996 33.1308L14.7585 24.4132M23.5996 33.1308L32.2078 24.5225" stroke="#1D1D1B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="faq__item-answer">
+                        Мы выпускаем широкий ассортимент пластиковых горшков: классические, декоративные, с автополивом, подвесные и кашпо разных форм и размеров для дома, офиса и сада.
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__item-top">
+                        <span class="faq__item-question">Как выбрать подходящий размер горшка для растения?</span>
+                        <svg class="faq__item-arrow" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="24" fill="#EDF4E7"/>
+                            <path d="M23.6005 15.6641L23.5996 33.1308M23.5996 33.1308L14.7585 24.4132M23.5996 33.1308L32.2078 24.5225" stroke="#1D1D1B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="faq__item-answer">
+                        Мы выпускаем широкий ассортимент пластиковых горшков: классические, декоративные, с автополивом, подвесные и кашпо разных форм и размеров для дома, офиса и сада.
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__item-top">
+                        <span class="faq__item-question">Как ухаживать за пластиковыми горшками?</span>
+                        <svg class="faq__item-arrow" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="24" fill="#EDF4E7"/>
+                            <path d="M23.6005 15.6641L23.5996 33.1308M23.5996 33.1308L14.7585 24.4132M23.5996 33.1308L32.2078 24.5225" stroke="#1D1D1B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="faq__item-answer">
+                        Мы выпускаем широкий ассортимент пластиковых горшков: классические, декоративные, с автополивом, подвесные и кашпо разных форм и размеров для дома, офиса и сада.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ </main>
 <script src="js/main.min.js"></script>
 </body>
 </html>

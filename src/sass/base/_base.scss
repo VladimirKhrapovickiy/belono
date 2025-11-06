@@ -4,7 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.slide{
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    max-width: vw(1312px);
+    margin: 0 auto;
+}
 html{
     @include respond(big-screen){
         font-size: 110%;
