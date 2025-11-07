@@ -18,21 +18,37 @@ $(document).ready(function() {
     }
     //слайдеры
     const swiperCats = new Swiper('.categories__list-mobile', {
-        slidesPerView: 1,
+        slidesPerView: "auto",
+        centeredSlides: true,
         pagination: {
             el: '.categories__swiper-pagination',
         },
         breakpoints: {
             460: {
                 slidesPerView: 2,
+                centeredSlides: false,
             },
         },
     });
     const swiperRec = new Swiper('.swiper-recomended', {
-        slidesPerView: 2,
+        slidesPerView: "auto",
+        centeredSlides: true,
+        breakpoints: {
+            460: {
+                slidesPerView: 2,
+                centeredSlides: false,
+            },
+        },
     });
     const swiperGal = new Swiper('.swiper-gallary', {
-        slidesPerView: 2,
+        slidesPerView: "auto",
+        centeredSlides: true,
+        breakpoints: {
+            460: {
+                slidesPerView: 2,
+                centeredSlides: false,
+            },
+        },
         pagination: {
             el: '.swiper-gallary__swiper-pagination',
         },

@@ -157,6 +157,9 @@
     &__menu-active{
         top: 0;
     }
+    .socials-mobile{
+        display: none;
+    }
 }
 @media(max-width: 768px){
     .header__right .header__social{
@@ -187,6 +190,34 @@
     .header .hamburger-menu.open .bar:nth-child(1) {
         transform: translateY(5px) rotate(45deg);
     }
+    .header__menu-img{
+        display: none;
+    }
+    .header__menu .menu__name{
+        font-size: vwmb(16px);
+        margin-bottom: vwmb(16px);
+        line-height: 100%;
+    }
+    .header__menu .menu__item a{
+        font-size: vwmb(40px);  
+        line-height: 100%;
+    }
+    .header__menu .header__menu-content{
+        width: 100%;
+    }
+    .header__menu .contact__name{
+        font-size: vwmb(14px);
+        margin-bottom: vwmb(8px);
+        line-height: 100%;
+    }
+    .header__menu .contact__value{
+        font-size: vwmb(16px);
+        line-height: 100%;
+    }
+    .header__menu .socials__link img{
+        width: vwmb(40px);
+        height: vwmb(40px);
+    }
 }
 @media(max-width: 460px){
     .header{
@@ -203,5 +234,48 @@
     .header__right .header__cart img, .header__login img{
         width: vwm(24px);
         height: vwm(24px);
+    }
+}
+@media(max-width: 460px){
+    .header__menu .header__menu-content {
+        padding: vwm(74px) vwm(16px);
+    }
+    .header__menu .menu__name {
+        font-size: vwm(16px);
+        line-height: 120%;
+        margin-bottom: vwm(16px);
+    }
+    .header__menu .menu__item a{
+        font-size: vwm(24px);  
+    }
+    .header__menu .menu__list{
+        gap: vwm(16px);
+    }
+    .header__menu .contact__name{
+        font-size: vwm(16px); 
+        margin-bottom: vwm(8px);
+    }
+    .header__menu .contact__value{
+        font-size: vwm(16px);
+    }
+    .header__menu .header__menu-contacts{
+        gap: vwm(24px);
+    }
+    .header__menu .container {
+        height: 94vh;
+    }
+    .header__menu .header__menu-content{
+        justify-items: center;
+    }
+    .header__menu .socials{
+        display: none;
+    }
+    .header .socials-mobile{
+        display: flex;
+    }
+    .header__menu .socials__link img{
+        width: vwm(40px);
+        height: vwm(40px);
+        margin-top: vwm(16px);
     }
 }
