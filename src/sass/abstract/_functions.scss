@@ -7,3 +7,11 @@
     $vwSize: math.div($size, 14.4px);
     @return #{$vwSize}vw;
 }
+@function vwm($size) {
+    $vwSize: math.div($size, 3.8px);
+    @return #{$vwSize}vw;
+}
+@function vwmb($size) {
+    $vwSize: math.div($size, 7px);
+    @return #{$vwSize}vw;
+}

@@ -12,6 +12,12 @@
     max-width: vw(1312px);
     margin: 0 auto;
 }
+@media(max-width: 460px){
+    .container{
+        max-width: 100%;
+        padding: 0 vwm(16px);
+    }
+}
 html{
     @include respond(big-screen){
         font-size: 110%;

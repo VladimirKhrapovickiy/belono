@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="slideshow">
-<header>
+<header class="header">
     <div class="container">
         <div class="row">
             <img src="./icons/logo.svg" alt="логотип" class="header__logo">
-            <div class="header__burger">
-                <img src="./icons/burger.svg" alt="бургер меню" class="header__burger-icon">
+            <div class="header__burger hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
             <div class="header__right">
                 <div class="header__social">
-                    <img src="./icons/wa_icon.svg" alt="whatsapp">
-                    <img src="./icons/vk_icon.svg" alt="vkontakte">
-                    <img src="./icons/tg_icon.svg" alt="telegramm">
+                    <a href="#"><img src="./icons/wa_icon.svg" alt="whatsapp"></a>
+                    <a href="#"><img src="./icons/vk_icon.svg" alt="vkontakte"></a>
+                    <a href="#"><img src="./icons/tg_icon.svg" alt="telegramm"></a>
                 </div>
                 <div class="header__cart">
                     <img src="./icons/cart_icon.svg" alt="корзина">
@@ -30,7 +33,72 @@
             </div>
         </div>
     </div>
+        <div class="header__menu">
+            <div class="container">
+                <img src="./img/menu-img.png" alt="горшок" class="header__menu-img">
+                <div class="header__menu-content">
+                    <div class="header__menu-left">
+                        <div class="menu">
+                            <div class="menu__name">Каталог</div>
+                            <ul class="menu__list">
+                                <li class="menu__item"><a href="#">Кашпо</a></li>
+                                <li class="menu__item"><a href="#">Классика</a></li>
+                                <li class="menu__item"><a href="#">Цилиндры</a></li>
+                                <li class="menu__item"><a href="#">Технические</a></li>
+                            </ul>
+                        </div>
+                        <div class="header__menu-contacts">
+                            <div class="contact">
+                                <div class="contact__name">
+                                    Почта
+                                </div>
+                                <a href="mailto:info@belono.ru" class="contact__value">
+                                    info@belono.ru
+                                </a>
+                            </div>
+                            <div class="contact">
+                                <div class="contact__name">
+                                    Телефон
+                                </div>
+                                <a href="tel:8-916-957-96-94" class="contact__value">
+                                    8 916 957 96 94
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__menu-right">
+                        <div class="menu">
+                            <div class="menu__name">Информация</div>
+                            <ul class="menu__list">
+                                <li class="menu__item"><a href="#">О нас</a></li>
+                                <li class="menu__item"><a href="#">Доставка</a></li>
+                                <li class="menu__item"><a href="#">Оплата</a></li>
+                                <li class="menu__item"><a href="#">Возврат</a></li>
+                            </ul>
+                        </div>
+                        <div class="socials">
+                            <a href="#" class="socials__link">
+                                <img src="./img/wa-ico.svg" alt="" class="socials__ico">
+                            </a>
+                            <a href="#" class="socials__link">
+                                <img src="./img/vk-ico.svg" alt="" class="socials__ico">
+                            </a>
+                            <a href="#" class="socials__link">
+                                <img src="./img/tg-ico.svg" alt="" class="socials__ico">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </header>
+    <div class="cookie">
+        <div class="cookie__container">
+            <img src="./img/cookie.png" alt="печенька" class="cookie__img">
+            <p class="cookie__txt">Мы используем файлы cookies, чтобы сайт работал корректно и удобно. Они помогают нам улучшать ваш опыт и делать покупки проще и быстрее.</p>
+            <button class="cookie__btn">Хорошо</button>
+        </div>
+    </div>
  <main>
     <section class="main-screen slide-section">
         <div class="container">
@@ -38,6 +106,68 @@
             <p class="main-screen__txt">Создайте в своём доме атмосферу уюта и свежести с нашими пластиковыми цветочными горшками. Они лёгкие, прочные и стильные, идеально подходят для любых растений и помогут вам сохранить порядок и красоту в вашем пространстве.</p>
             <div class="main-screen__pots">
                 <img src="/img/pots.png" alt="горшки" class="main-screen__pots-img">
+                <div class="main-screen__product main-screen__product-1">
+                    <div class="main-screen__product-dot"><div></div></div>
+                    <div class="main-screen__product-card">
+                        <img src="/img/main-screen-product.png" alt="" class="main-screen__product-img">
+                        <div class="main-screen__product-name">Кашпо со вставкой</div>
+                        <div class="main-screen__product-price">500 р.</div>
+                    </div>
+                </div>
+                <div class="main-screen__product main-screen__product-2">
+                    <div class="main-screen__product-dot"><div></div></div>
+                    <div class="main-screen__product-card">
+                        <img src="/img/main-screen-product.png" alt="" class="main-screen__product-img">
+                        <div class="main-screen__product-name">Кашпо со вставкой</div>
+                        <div class="main-screen__product-price">500 р.</div>
+                    </div>
+                </div>
+                <div class="main-screen__product main-screen__product-3">
+                    <div class="main-screen__product-dot"><div></div></div>
+                    <div class="main-screen__product-card">
+                        <img src="/img/main-screen-product.png" alt="" class="main-screen__product-img">
+                        <div class="main-screen__product-name">Кашпо со вставкой</div>
+                        <div class="main-screen__product-price">500 р.</div>
+                    </div>
+                </div>
+                <div class="main-screen__product main-screen__product-4">
+                    <div class="main-screen__product-dot"><div></div></div>
+                    <div class="main-screen__product-card">
+                        <img src="/img/main-screen-product.png" alt="" class="main-screen__product-img">
+                        <div class="main-screen__product-name">Кашпо со вставкой</div>
+                        <div class="main-screen__product-price">500 р.</div>
+                    </div>
+                </div>
+                <div class="main-screen__product main-screen__product-5">
+                    <div class="main-screen__product-dot"><div></div></div>
+                    <div class="main-screen__product-card">
+                        <img src="/img/main-screen-product.png" alt="" class="main-screen__product-img">
+                        <div class="main-screen__product-name">Кашпо со вставкой</div>
+                        <div class="main-screen__product-price">500 р.</div>
+                    </div>
+                </div>
+                <div class="main-screen__product main-screen__product-6">
+                    <div class="main-screen__product-dot"><div></div></div>
+                    <div class="main-screen__product-card">
+                        <img src="/img/main-screen-product.png" alt="" class="main-screen__product-img">
+                        <div class="main-screen__product-name">Кашпо со вставкой</div>
+                        <div class="main-screen__product-price">500 р.</div>
+                    </div>
+                </div>
+                <div class="main-screen__product main-screen__product-7">
+                    <div class="main-screen__product-dot"><div></div></div>
+                    <div class="main-screen__product-card">
+                        <img src="/img/main-screen-product.png" alt="" class="main-screen__product-img">
+                        <div class="main-screen__product-name">Кашпо со вставкой</div>
+                        <div class="main-screen__product-price">500 р.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-screen__pots-mobile">
+                <img src="/img/main-pots-mobile.png" alt="горшки" class="main-screen__pots-img">
+                <div class="main-screen__product-dot"><div></div></div>
+                <div class="main-screen__product-dot"><div></div></div>
+                <div class="main-screen__product-dot"><div></div></div>
             </div>
             <div class="main-screen__bottom">
                 <div class="main-screen__reviews">
@@ -56,6 +186,7 @@
             </div>
         </div>
     </section>
+
     <section class="categories slide-section">
         <div class="container">
             <div class="section-subtitle categories__subtitle">Категории товаров</div>
@@ -110,6 +241,63 @@
                     </div>
                 </li>
             </ul>
+            <ul class="categories__list-mobile">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__container">
+                            <img src="/img/category_1.png" alt="горшки" class="swiper-slide__img">
+                            <div class="swiper-slide__name">Кашпо</div>
+                            <div class="swiper-slide__txt">Создайте в своём доме атмосферу уюта Создайте в своём доме атмосферу уюта Создайте в своём доме атмосферу уюта </div>
+                            <a href="#" class="swiper-slide__link">
+                                <span>Смотреть</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.125 15.7874L16.2989 3.26563M16.2989 3.26563V16.3091M16.2989 3.26563L4.125 3.26562" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__container">
+                            <img src="/img/category_2.png" alt="горшки" class="swiper-slide__img">
+                            <div class="swiper-slide__name">Цилиндры</div>
+                            <div class="swiper-slide__txt">Создайте в своём доме атмосферу уюта Создайте в своём доме атмосферу уюта Создайте в своём доме атмосферу уюта </div>
+                            <a href="#" class="swiper-slide__link">
+                                <span>Смотреть</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.125 15.7874L16.2989 3.26563M16.2989 3.26563V16.3091M16.2989 3.26563L4.125 3.26562" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__container">
+                            <img src="/img/category_3.png" alt="горшки" class="swiper-slide__img">
+                            <div class="swiper-slide__name">Классика</div>
+                            <div class="swiper-slide__txt">Создайте в своём доме атмосферу уюта Создайте в своём доме атмосферу уюта Создайте в своём доме атмосферу уюта </div>
+                            <a href="#" class="swiper-slide__link">
+                                <span>Смотреть</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.125 15.7874L16.2989 3.26563M16.2989 3.26563V16.3091M16.2989 3.26563L4.125 3.26562" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__container">
+                            <img src="/img/category_4.png" alt="горшки" class="swiper-slide__img">
+                            <div class="swiper-slide__name">Технические</div>
+                            <div class="swiper-slide__txt">Создайте в своём доме атмосферу уюта Создайте в своём доме атмосферу уюта Создайте в своём доме атмосферу уюта </div>
+                            <a href="#" class="swiper-slide__link">
+                                <span>Смотреть</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.125 15.7874L16.2989 3.26563M16.2989 3.26563V16.3091M16.2989 3.26563L4.125 3.26562" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="categories__swiper-pagination"></div>
+            </ul>
         </div>
     </section>
 
@@ -154,9 +342,15 @@
                         </div>
                     </li>
                 </ul>
+                <ul class="shema__adv-list-mobile">
+                    <li class="shema__adv-item-mobile shema__adv-item-mobile-1 call-popup" data-popup-id = "adv-1"><span>1</span></li>
+                    <li class="shema__adv-item-mobile shema__adv-item-mobile-2 call-popup" data-popup-id = "adv-2"><span>2</span></li>
+                    <li class="shema__adv-item-mobile shema__adv-item-mobile-3 call-popup" data-popup-id = "adv-3"><span>3</span></li>
+                </ul>
             </div>
         </div>
     </section>
+
     <section class="recomended slide-section">
         <div class="container">
             <div class="recomended__top">
@@ -212,6 +406,64 @@
                     </div>
                 </div>
             </div>
+            <div class="recomended__products recomended__products-mobile swiper-recomended">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <a href="#" class="product__category">Цилиндры</a>
+                            <img src="./img/product_1.png" alt="" class="product__img">
+                            <div class="product__bottom">
+                                <div class="product__info">
+                                    <p class="product__name">Belono Classic 45 см</p>
+                                    <p class="product__price">500 руб.</p>
+                                </div>
+                                <a href="#" class="product__btn"><img src="./img/arrow_black.png" alt="стрелка" class="arrow-black"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <a href="#" class="product__category">Цилиндры</a>
+                            <img src="./img/product_2.png" alt="" class="product__img">
+                            <div class="product__bottom">
+                                <div class="product__info">
+                                    <p class="product__name">Belono Classic 45 см</p>
+                                    <p class="product__price">500 руб.</p>
+                                </div>
+                                <a href="#" class="product__btn"><img src="./img/arrow_black.png" alt="стрелка" class="arrow-black"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <a href="#" class="product__category">Цилиндры</a>
+                            <img src="./img/product_3.png" alt="" class="product__img">
+                            <div class="product__bottom">
+                                <div class="product__info">
+                                    <p class="product__name">Belono Classic 45 см</p>
+                                    <p class="product__price">500 руб.</p>
+                                </div>
+                                <a href="#" class="product__btn"><img src="./img/arrow_black.png" alt="стрелка" class="arrow-black"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <a href="#" class="product__category">Цилиндры</a>
+                            <img src="./img/product_4.png" alt="" class="product__img">
+                            <div class="product__bottom">
+                                <div class="product__info">
+                                    <p class="product__name">Belono Classic 45 см</p>
+                                    <p class="product__price">500 руб.</p>
+                                </div>
+                                <a href="#" class="product__btn"><img src="./img/arrow_black.png" alt="стрелка" class="arrow-black"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <a href="/#" class="recomended__link recomended__link-mobile">Смотреть все</a>
         </div>
     </section>
 
@@ -219,6 +471,56 @@
         <div class="container">
             <div class="section-subtitle gallary__subtitle">Галерея</div>
             <h2 class="section-title gallary__title">Воплощаем ваши идеи в реальность</h2>
+            <div class="gallary__list-mobile swiper-gallary">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="gallary__item">
+                            <img src="./img/gallary_1.png" alt="горшок" class="gallary__item-bg">
+                            <div class="gallary__item-info">
+                                <div class="gallary__item-info-cat">Цилиндры</div>
+                                <img src="./img/gallary_inner.png" alt="" class="gallary__item-info-img">
+                                <div class="gallary__item-info-bottom">
+                                    <div class="gallary__item-info-name">Наименование товара</div>
+                                    <svg class="gallary__item-info-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.49811 9.28924L17.2181 9.2901M17.2181 9.2901L9.37232 17.2471M17.2181 9.2901L9.47065 1.54267" stroke="#5F760F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallary__item">
+                            <img src="./img/gallary_2.png" alt="горшок" class="gallary__item-bg">
+                            <div class="gallary__item-info">
+                                <div class="gallary__item-info-cat">Цилиндры</div>
+                                <img src="./img/gallary_inner.png" alt="" class="gallary__item-info-img">
+                                <div class="gallary__item-info-bottom">
+                                    <div class="gallary__item-info-name">Наименование товара</div>
+                                    <svg class="gallary__item-info-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.49811 9.28924L17.2181 9.2901M17.2181 9.2901L9.37232 17.2471M17.2181 9.2901L9.47065 1.54267" stroke="#5F760F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallary__item">
+                            <img src="./img/gallary_3.png" alt="горшок" class="gallary__item-bg">
+                            <div class="gallary__item-info">
+                                <div class="gallary__item-info-cat">Цилиндры</div>
+                                <img src="./img/gallary_inner.png" alt="" class="gallary__item-info-img">
+                                <div class="gallary__item-info-bottom">
+                                    <div class="gallary__item-info-name">Наименование товара</div>
+                                    <svg class="gallary__item-info-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.49811 9.28924L17.2181 9.2901M17.2181 9.2901L9.37232 17.2471M17.2181 9.2901L9.47065 1.54267" stroke="#5F760F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-gallary__swiper-pagination"></div>
+            </div>
             <div class="gallary__list">
                 <div class="gallary__item">
                     <img src="./img/gallary_1.png" alt="горшок" class="gallary__item-bg">
@@ -350,7 +652,41 @@
             </div>
         </div>
     </section>
+
  </main>
+
+ <div class="popup" id="adv-1">
+    <img src="./img/btn_close.png" alt="крестик" class="popup__close">
+    <div class="popup__container">
+        <img src="./img/adv_ico-green.png" alt="знак отличия" class="popup__adv-ico">
+        <div class="popup__adv-content">
+            <p class="popup__adv-name">Преимущество 1</p>
+            <p class="popup__adv-txt">Создайте в своём доме атмосферу уюта и свежести с нашими пластиковыми цветочными горшками.</p>
+        </div>
+    </div>
+ </div>
+  <div class="popup" id="adv-2">
+    <img src="./img/btn_close.png" alt="крестик" class="popup__close">
+    <div class="popup__container">
+        <img src="./img/adv_ico-green.png" alt="знак отличия" class="popup__adv-ico">
+        <div class="popup__adv-content">
+            <p class="popup__adv-name">Преимущество 2</p>
+            <p class="popup__adv-txt">Создайте в своём доме атмосферу уюта и свежести с нашими пластиковыми цветочными горшками.</p>
+        </div>
+    </div>
+ </div>
+  <div class="popup" id="adv-3">
+    <img src="./img/btn_close.png" alt="крестик" class="popup__close">
+    <div class="popup__container">
+        <img src="./img/adv_ico-green.png" alt="знак отличия" class="popup__adv-ico">
+        <div class="popup__adv-content">
+            <p class="popup__adv-name">Преимущество 3</p>
+            <p class="popup__adv-txt">Создайте в своём доме атмосферу уюта и свежести с нашими пластиковыми цветочными горшками.</p>
+        </div>
+    </div>
+ </div>
+
+ <script src="js/swiper-bundle.min.js"></script>
 <script src="js/main.min.js"></script>
 </body>
 </html>

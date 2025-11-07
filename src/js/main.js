@@ -1,6 +1,46 @@
 $(document).ready(function() {
+    //попапы
+    const $callPopup = $(".call-popup");
+    if($callPopup.length>0){
+        $callPopup.each(function(){
+            const $item = $(this);
+            $item.on("click", function(){
+                $(`#${$item.data("popup-id")}`).fadeIn();
+                console.log($(`#${$item.data("popup-id")}`))
+            })
+        })
+        $(".popup").each(function(){
+            const $item = $(this);
+            $item .find(".popup__close").on("click", function(){
+                $item.fadeOut();
+            })
+        })
+    }
+    //слайдеры
+    const swiperCats = new Swiper('.categories__list-mobile', {
+        slidesPerView: 1,
+        pagination: {
+            el: '.categories__swiper-pagination',
+        },
+        breakpoints: {
+            460: {
+                slidesPerView: 2,
+            },
+        },
+    });
+    const swiperRec = new Swiper('.swiper-recomended', {
+        slidesPerView: 2,
+    });
+    const swiperGal = new Swiper('.swiper-gallary', {
+        slidesPerView: 2,
+        pagination: {
+            el: '.swiper-gallary__swiper-pagination',
+        },
+    });
+    //скролл слайдов (секций) на главной
     const $slideshow  = $(".slideshow");
     if($slideshow.length  > 0){
+        window.scrollTo(0, 0)
         const $slides = $('.slide-section');
         const coordinates =[0 , 100 , 200 , 300 , 400 , 500]
         function slideDown(){
@@ -60,6 +100,50 @@ $(document).ready(function() {
             }
         });
     }
+
+
+    //точки на главном экране
+    const $dots = $(".main-screen__product-dot");
+    if($dots.length > 0){
+        $dots.each(function(){
+            const $item = $(this);
+            $item.on("mouseenter", function(){
+                $dots.each(function(){
+                    if($(this) !==  $item){
+                        $(this).css("z-index", 0)
+                    }
+                })
+            })
+            $item.on("mouseleave", function(){
+                $dots.each(function(){
+                    if($(this) !==  $item){
+                        $(this).css("z-index", 2)
+                    }
+                })
+            })
+        })
+    }
+
+    //куки
+    const $cookie = $(".cookie");
+    if($cookie.length > 0){
+        const $cookieBtn = $(".cookie__btn")
+        setTimeout(() => {
+            if(!$cookie.hasClass("cookie-active")){
+                $cookie.addClass("cookie-active");
+            }
+        }, 2500);
+        $cookieBtn.on("click", function(){
+             $cookie.removeClass("cookie-active");
+        })
+    }
+
+    //бургер меню 
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    hamburgerMenu.addEventListener('click', () => {
+        hamburgerMenu.classList.toggle('open');
+        $(".header__menu").toggleClass("header__menu-active")
+    });
 
     //блок категорий на главной
     const $categories = $(".category");
