@@ -1,0 +1,121 @@
+.footer{
+    background-color: $color-black;
+    border-top-left-radius:32px;
+    border-top-right-radius: 32px;
+    margin-top:- vw(64px);
+    position: relative;
+    z-index: 7;
+    padding: vw(64px) vw(64px) vw(8px);
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: vw(64px);
+    }
+    &__logo{
+        width: vw(230px);
+        height: vw(36px);
+    }
+    &__menu-list{
+        display: flex;
+        flex-direction: column;
+        gap: vw(16px);
+    }
+    &__menu-name, &__contact-name{
+        font-size: vw(16px);
+        line-height: 120%;
+        color: $color-accent;
+        display: inline-block;
+    }
+    &__menu-name{
+        margin-bottom: vw(16px);
+    }
+    &__menu-item a{
+        font-size: vw(24px);
+        color: $color-white;
+        font-weight: 500;
+        line-height: 100%;
+    }
+    &__contacts{
+        display: flex;
+        flex-direction: column;
+        gap: vw(16px);
+    }
+    &__contact{
+        display: flex;
+        flex-direction: column;
+        gap: vw(8px);
+    }
+    &__contact-link{
+        font-size: vw(24px);
+        color: $color-white;
+        font-weight: 500;
+        line-height: 100%;
+    }
+    &__socials{
+        display: flex;
+        gap: vw(16px);
+    }
+    .socials__ico{
+        width: vw(40px);
+        height: vw(40px);
+    }
+    &__bottom, &__bottom a{
+        display: flex;
+        justify-content: space-between;
+        margin-top: vw(8px);
+        font-size: vw(12px);
+        color: $color-gray;
+    }
+    &__bottom a{
+        margin-top: 0;
+        display: inline;
+    }
+    &__bottom-list{
+        max-width: vw(420px);
+    }
+    &__bottom-list-2{
+        text-align: right;
+    }
+}
+@media(max-width: 768px){
+    .footer__top{
+        flex-direction: column;
+        margin-bottom: vwm(16px);
+    }
+    .footer__logo{
+        width: 80vw;
+        height: auto;
+    }
+    .footer__contact-name, .footer__menu-name{
+        font-size: vwm(16px);
+        margin-bottom: vwm(16px);
+    }
+    .footer__menu-item a, .footer__contact-link{
+        font-size: vwm(24px);
+    }
+    .footer__menu{
+        margin-bottom: vwm(24px);
+    }
+    .footer .socials__ico{
+        width: vwm(40px);
+        height: vwm(40px);
+    }
+    .footer .separator{
+       margin-bottom: vwm(16px);
+    }
+    .footer__bottom{
+        flex-direction: column;
+        gap: vwm(16px);
+    }
+    .footer__bottom, .footer__bottom a{
+        font-size: vwm(14px);
+        line-height: 120%;
+    }
+    .footer__bottom-list{
+        max-width: 100%;
+    }
+    .footer__bottom-list-2{
+        text-align: left;
+    }
+}

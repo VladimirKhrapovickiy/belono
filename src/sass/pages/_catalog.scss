@@ -1,0 +1,194 @@
+//Каталог
+.breadcrumbs{
+    display: flex;
+    margin-top: vw(100px);
+    justify-content: center;
+    gap: vw(8px);
+    font-size: vw(16px);
+    line-height: 120%;
+    margin-bottom: vw(24px);
+    font-weight: 500;
+    &__item-current{
+        color: $color-accent;
+    }
+    &__sep{
+        line-height: 35%;
+        font-size: vw(32px);
+    }
+}
+.page-title{
+    font-size: vw(56px);
+    font-weight: 500;
+    line-height: 90%;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.products{
+    padding: vw(40px) 0 120px;
+    background-color: $color-gray-light;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        margin-bottom: vw(24px);
+    }
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: vw(24px);
+        row-gap: vw(24px );
+    }
+}
+.sorting{
+    display: flex;
+    gap: vw(40px);
+    align-items: center;
+    &__current{
+        font-size: vw(16px);
+        position: relative;
+        display: flex;
+        gap: vw(4px);
+        cursor: pointer;
+        align-items: center;
+    }
+    &__current-ico, &__filter-ico{
+        width: vw(20px);
+        height: vw(20px);
+        transition: 0.3s all ease-in-out;
+    }
+    &__filter{
+        font-size: vw(16px);
+        cursor: pointer;
+    }
+    &__list{
+        position: absolute;
+        background-color: $color-white;
+        border-radius: 8px;
+        padding: vw(16px) vw(90px) vw(16px) vw(16px);
+        bottom: 0;
+        right: 0;
+        transform: translateY(100%);
+        border: 1px solid $color-gray-medium;
+        z-index: 999;
+        display: none;
+    }
+    &__item{
+        white-space: nowrap;
+    }
+    &__item:not(:last-child){
+        margin-bottom: vw(8px);
+    }
+    .sorting__current-active{
+        .sorting__current-ico{
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.cat-categories{
+    display: flex;
+    gap: vw(8px);
+    .cat-category{
+        padding: vw(12px) vw(24px);
+        border-radius: 100px;
+        border: 1px solid $color-accent;
+        font-size: vw(16px);
+        font-weight: 500;
+        transition: 0.3s all ease-in-out;
+        cursor: pointer;
+    }
+    .cat-category__active{
+        background-color: $color-accent;
+        color: $color-white;
+    }
+}
+@media(max-width: 900px){
+    .products__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .cat-categories .cat-category{
+        padding: vwmb(10px) vwmb(12px);
+        font-size: vwmb(12px);
+    }
+    .breadcrumbs{
+        font-size: vwmb(12px);
+    }
+    .breadcrumbs__sep {
+        line-height: 75%;
+    }
+    .page-title{
+        font-size: vwmb(44px);
+    }
+    .sorting__current{
+        font-size: vwmb(12px);
+    }
+    .sorting__filter{
+        font-size: vwmb(12px);
+    }
+    .sorting__item:not(:last-child){
+        margin-bottom: vwmb(6px);
+    }
+}
+@media(max-width: 768px){
+    .products__list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 600px){
+    .products {
+        padding: vwm(40px) 0;
+    }
+    .products__top{
+        flex-direction: column;
+        gap: vwm(16px);
+        margin-bottom: vwm(24px);
+    }
+    .cat-categories{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: vwm(8px);
+    }
+    .cat-categories .cat-category{
+        padding: vwm(12px) vwm(24px);
+        font-size: vwm(16px);
+    }
+    .sorting__current {
+        font-size: vwm(16px);
+    }
+    .sorting__current-ico, .sorting__filter-ico{
+        width: vwm(20px);
+        height: vwm(20px);
+    }
+    .sorting__filter{
+        font-size: vwm(16px);
+    }
+    .sorting__item{
+        line-height: 100%;
+    }
+    .sorting__list{
+        padding: vwm(16px) vwm(45px) vwm(16px) vwm(16px);
+    }
+    .sorting__item:not(:last-child) {
+        margin-bottom: vwm(8px);
+    }
+    .breadcrumbs {
+        font-size: vwm(14px);
+        margin-top: vwm(45px);
+        gap: vwm(8px);
+        margin-bottom: vwm(24px);
+    }
+    .breadcrumbs__sep {
+        font-size: 6vw;
+    }
+    .page-title{
+        font-size: vwm(48px);
+    }
+    .products__list {
+        grid-template-columns: 1fr;
+        gap: vwm(20px);
+    }
+}

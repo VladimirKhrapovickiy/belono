@@ -1,92 +1,122 @@
 @font-face {
     font-family: "TT Norms";
-    src: url('../fonts/TTNorms-Thin.otf') ;
+    src: url('../fonts/TTNorms-Thin.woff2') format("woff2"),
+        url('../fonts/TTNorms-Thin.woff') format("woff");
 	font-weight: 100;
 	font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: "TT Norms";
-    src: url('../fonts/TTNorms-ThinItalic.otf') ;
+    src: url('../fonts/TTNorms-Thin.woff2') format("woff2"),
+    url('../fonts/TTNorms-ThinItalic.woff') format("woff");
 	font-weight: 100;
 	font-style: italic;
+    font-display: swap;
 }
 @font-face {
     font-family: "TT Norms";
-    src: url('../fonts/TTNorms-ExtraLight.otf') ;
+    src: url('../fonts/TTNorms-ExtraLight.woff2') format("woff2"),
+         url('../fonts/TTNorms-ExtraLight.woff') format("woff");
 	font-weight: 200;
 	font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: "TT Norms";
-    src: url('../fonts/TTNorms-ExtraLightItalic.otf') ;
+    src: url('../fonts/TTNorms-ExtraLightItalic.woff2') format("woff2"),
+         url('../fonts/TTNorms-ExtraLightItalic.woff') format("woff");
 	font-weight: 200;
 	font-style: italic;
+    font-display: swap;
 }
 @font-face {
     font-family: "TT Norms";
-    src: url('../fonts/TTNorms-Light.otf') ;
+    src: url('../fonts/TTNorms-Light.woff2') format("woff2"),
+         url('../fonts/TTNorms-Light.woff') format("woff");
 	font-weight: 300;
 	font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: "TT Norms";
-    src: url('../fonts/TTNorms-LightItalic.otf') ;
+    src: url('../fonts/TTNorms-LightItalic.woff2') format("woff2"),
+         url('../fonts/TTNorms-LightItalic.woff') format("woff");
 	font-weight: 300;
 	font-style: italic;
+    font-display: swap;
 }
 @font-face {
     font-family: "TT Norms";
-    src: url('../fonts/TTNorms-Regular.otf') ;
+    src: url('../fonts/TTNorms-Regular.woff2') format("woff2"),
+         url('../fonts/TTNorms-Regular.woff') format("woff");
 	font-weight: 400;
 	font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: "TT Norms";
-    src: url('../fonts/TTNorms-Medium.otf') ;
+    src: url('../fonts/TTNorms-Medium.woff2') format("woff2"),
+         url('../fonts/TTNorms-Medium.woff') format("woff");
 	font-weight: 500;
 	font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: "TT Norms";
-    src: url('../fonts/TTNorms-MediumItalic.otf') ;
+    src: url('../fonts/TTNorms-MediumItalic.woff2') format("woff2"),
+         url('../fonts/TTNorms-MediumItalic.woff') format("woff");
 	font-weight: 500;
 	font-style: italic;
+    font-display: swap;
 }
 @font-face {
     font-family: "TT Norms";
-    src: url('../fonts/TTNorms-Bold.otf') ;
+    src: url('../fonts/TTNorms-Bold.woff2') format("woff2"),
+         url('../fonts/TTNorms-Bold.woff') format("woff");
 	font-weight: 700;
 	font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: "TT Norms";
-    src: url('../fonts/TTNorms-BoldItalic.otf') ;
+    src: url('../fonts/TTNorms-BoldItalic.woff2') format("woff2"),
+         url('../fonts/TTNorms-BoldItalic.woff') format("woff");
 	font-weight: 700;
 	font-style: italic;
+    font-display: swap;
 }
 @font-face {
     font-family: "TT Norms";
-    src: url('../fonts/TTNorms-ExtraBold.otf') ;
+    src: url('../fonts/TTNorms-ExtraBold.woff2') format("woff2"),
+         url('../fonts/TTNorms-ExtraBold.woff') format("woff");
 	font-weight: 800;
 	font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: "TT Norms";
-    src: url('../fonts/TTNorms-ExtraBoldItalic.otf') ;
+    src: url('../fonts/TTNorms-ExtraBoldItalic.woff2') format("woff2"),
+         url('../fonts/TTNorms-ExtraBoldItalic.woff') format("woff");
 	font-weight: 800;
 	font-style: italic;
+    font-display: swap;
 }
 @font-face {
     font-family: "TT Norms";
-    src: url('../fonts/TTNorms-Black.otf') ;
+    src: url('../fonts/TTNorms-Black.woff2') format("woff2"),
+         url('../fonts/TTNorms-Black.woff') format("woff");
 	font-weight: 900;
 	font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: "TT Norms";
-    src: url('../fonts/TTNorms-BlackItalic.otf') ;
+    src: url('../fonts/TTNorms-BlackItalic.woff2') format("woff2"),
+         url('../fonts/TTNorms-BlackItalic.woff') format("woff");
 	font-weight: 900;
 	font-style: italic;
+    font-display: swap;
 }
 
 @import "./reset.scss";
@@ -107,3 +137,5 @@
 
 
 @import "./pages/home";
+@import "./pages/catalog";
+@import "./pages/product";

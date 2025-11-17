@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <svg class="header__logo">
+                <use xlink:href="./icons/sprite.svg#logo"></use>
+            </svg>
+            <div class="header__burger hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="header__right">
+                <div class="header__social">
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="./icons/sprite.svg#wa_icon"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="./icons/sprite.svg#vk_icon"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="./icons/sprite.svg#tg_icon"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="header__cart link-green">
+                    <svg>
+                        <use xlink:href="./icons/sprite.svg#cart_icon"></use>
+                    </svg>
+                    <span>Корзина</span>
+                </div>
+                <div class="header__login">
+                    <svg>
+                        <use xlink:href="./icons/sprite.svg#login_icon"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="header__menu">
+            <div class="container">
+                <img src="./img/menu-img.png" alt="горшок" class="header__menu-img">
+                <div class="header__menu-content">
+                    <div class="header__menu-left">
+                        <div class="menu">
+                            <div class="menu__name">Каталог</div>
+                            <ul class="menu__list">
+                                <li class="menu__item"><a href="#" class="link-green">Кашпо</a></li>
+                                <li class="menu__item"><a href="#" class="link-green">Классика</a></li>
+                                <li class="menu__item"><a href="#" class="link-green">Цилиндры</a></li>
+                                <li class="menu__item"><a href="#" class="link-green">Технические</a></li>
+                            </ul>
+                        </div>
+                        <div class="header__menu-contacts">
+                            <div class="contact">
+                                <div class="contact__name">
+                                    Почта
+                                </div>
+                                <a href="mailto:info@belono.ru" class="contact__value link-green">
+                                    info@belono.ru
+                                </a>
+                            </div>
+                            <div class="contact">
+                                <div class="contact__name">
+                                    Телефон
+                                </div>
+                                <a href="tel:8-916-957-96-94" class="contact__value link-green">
+                                    8 916 957 96 94
+                                </a>
+                            </div>
+                            <div class="socials socials-mobile">
+                                <a href="#" class="socials__link">
+                                    <svg class="socials__ico">
+                                        <use xlink:href="./icons/sprite.svg#wa-ico"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="socials__link">
+                                    <svg class="socials__ico">
+                                        <use xlink:href="./icons/sprite.svg#vk-ico"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="socials__link">
+                                    <svg class="socials__ico">
+                                        <use xlink:href="./icons/sprite.svg#tg-ico"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__menu-right">
+                        <div class="menu">
+                            <div class="menu__name">Информация</div>
+                            <ul class="menu__list">
+                                <li class="menu__item"><a href="#" class="link-green">О нас</a></li>
+                                <li class="menu__item"><a href="#" class="link-green">Доставка</a></li>
+                                <li class="menu__item"><a href="#" class="link-green">Оплата</a></li>
+                                <li class="menu__item"><a href="#" class="link-green">Возврат</a></li>
+                            </ul>
+                        </div>
+                        <div class="socials">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__ico">
+                                    <use xlink:href="./icons/sprite.svg#wa-ico"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="socials__link">
+                                <svg class="socials__ico">
+                                    <use xlink:href="./icons/sprite.svg#vk-ico"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="socials__link">
+                                <svg class="socials__ico">
+                                    <use xlink:href="./icons/sprite.svg#tg-ico"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</header>
+<div class="cookie">
+    <div class="cookie__container">
+        <img src="./img/cookie.png" alt="печенька" class="cookie__img">
+        <p class="cookie__txt">Мы используем файлы cookies, чтобы сайт работал корректно и удобно. Они помогают нам улучшать ваш опыт и делать покупки проще и быстрее.</p>
+        <button class="cookie__btn">Хорошо</button>
+    </div>
+</div>
+<div class="breadcrumbs">
+    <div class="breadcrumbs__item"><a class="link-green" href="/">Главная</a></div>
+    <div class="breadcrumbs__sep">•</div>
+    <div class="breadcrumbs__item"><a class="link-green" href="/catalog">Каталог</a></div>
+    <div class="breadcrumbs__sep">•</div>
+    <div class="breadcrumbs__item">Кашпо</div>
+    <div class="breadcrumbs__sep">•</div>
+    <div class="breadcrumbs__item breadcrumbs__item-current">Belono Classic Кашпо</div>
+</div>
+<main>
+    <h1 class="page-title">Belono Classic Кашпо</h1>
+    <section class="products product">
+        <div class="container">
+            <div class="product__gallary">
+                <section class="slider">
+                    <div class="slider__flex">
+                        <div class="slider__col">
+                        <div class="slider__thumbs">
+                            <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slider__image"><img src="/img/slider-1.jpg" alt="" /></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__image"><img src="/img/slider-2.jpg" alt="" /></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__image"><img src="/img/slider-3.jpg" alt="" /></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__image"><img src="/img/slider-4.jpg" alt="" /></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__image"><img src="/img/slider-5.jpg" alt="" /></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__image"><img src="/img/slider-6.jpg" alt="" /></div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="slider__images">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider__image"><img src="/img/slider-1.jpg" alt="" /></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__image"><img src="/img/slider-2.jpg" alt="" /></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__image"><img src="/img/slider-3.jpg" alt="" /></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__image"><img src="./img/slider-4.jpg" alt="" /></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__image"><img src="/img/slider-5.jpg" alt="" /></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__image"><img src="/img/slider-6.jpg" alt="" /></div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                    </div>
+                    </section>
+            </div>
+            <div class="product__info">
+                <div class="product__info-top">
+                    <span class="product__info-price">123 ₽</span>
+                    <div class="product__info-code">
+                        <span>Код товара: 43102</span>
+                        <svg class="product__info-code_ico">
+                            <use xlink:href="./icons/sprite.svg#copy-green"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="product__info-vars">
+                    <div class="product__info-var">
+                        <span class="product__info-var_name">Размер</span>
+                        <div class="product-select">
+                            <div class="product-select__current">
+                                <span>45 см (средний)</span>
+                                <svg class="product-select__current_ico">
+                                    <use xlink:href="./icons/sprite.svg#arrow-open"></use>
+                                </svg>
+                            </div>
+                            <ul class="product-select__vars">
+                                <li class="product-select__var product-select__var-current">45 см (средний)</li>
+                                <li class="product-select__var">Значение 2</li>
+                                <li class="product-select__var">Значение 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product__info-var">
+                        <span class="product__info-var_name">Цвет</span>
+                        <div class="product-select">
+                            <div class="product-select__current">
+                                <span>белый, белый матовый</span>
+                                <svg class="product-select__current_ico">
+                                    <use xlink:href="./icons/sprite.svg#arrow-open"></use>
+                                </svg>
+                            </div>
+                            <ul class="product-select__vars">
+                                <li class="product-select__var product-select__var-current">
+                                    белый, белый матовый <span class="product-quant">осталось 11 шт.</span>
+                                </li>
+                                <li class="product-select__var">Значение 2 <span class="product-quant">осталось 11 шт.</span></li>
+                                <li class="product-select__var">Значение 3 <span class="product-quant">осталось 11 шт.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__info-add">
+                    <div class="product__info-add_quant">
+                        <button class="product__info-add_quant-dec">-</button>
+                        <input type="text" class="product__info-add_quant-value" value="1" disabled>
+                        <button class="product__info-add_quant-inc">+</button>
+                    </div>
+                    <button class="product__info-add-to-cart btn-green">Добавить в корзину <span class="product__info-add-to-cart_price">127 ₽</span></button>
+                </div>
+                <div class="separator"></div>
+                <div class="product__info-advants">
+                    <div class="product__info-advant">
+                        <svg class="product__info-advant-ico">
+                            <use xlink:href="./icons/sprite.svg#adv-delivery"></use>
+                        </svg>
+                        <span>Бесплатная доставка по РФ</span>
+                    </div>
+                    <div class="product__info-advant">
+                        <svg class="product__info-advant-ico">
+                            <use xlink:href="./icons/sprite.svg#adv-card"></use>
+                        </svg>
+                        <span>Осуществляем возврат в течение 14 дней</span>
+                    </div>
+                    <div class="product__info-advant">
+                        <svg class="product__info-advant-ico">
+                            <use xlink:href="./icons/sprite.svg#adv-present"></use>
+                        </svg>
+                        <span>Кэшбек 10% бонусами после первой покупки</span>
+                    </div>
+                </div>
+                <div class="product__info-desc product__info-desc-active">
+                    <div class="product__info-desc_name">
+                        <span>Описание</span>
+                        <svg class="product__info-desc_ico">
+                            <use xlink:href="./icons/sprite.svg#arrow-open"></use>
+                        </svg>
+                    </div>
+                    <div class="product__info-desc_content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                </div>
+                <div class="product__info-desc product__info-desc-active">
+                    <div class="product__info-desc_name">
+                        <span>Характеристика</span>
+                        <svg class="product__info-desc_ico">
+                            <use xlink:href="./icons/sprite.svg#arrow-open"></use>
+                        </svg>
+                    </div>
+                    <div class="product__info-desc_content">
+                        <ul class="product-chars">
+                            <li class="product-char">
+                                <div class="product-char__name">Гарантия</div>
+                                <div class="product-char__dots"></div>
+                                <div class="product-char__value">12 месяцев</div>
+                            </li>
+                            <li class="product-char">
+                                <div class="product-char__name">Вес</div>
+                                <div class="product-char__dots"></div>
+                                <div class="product-char__value">26,3 кг</div>
+                            </li>
+                            <li class="product-char">
+                                <div class="product-char__name">Габариты</div>
+                                <div class="product-char__dots"></div>
+                                <div class="product-char__value">805x644x660</div>
+                            </li>
+                            <li class="product-char">
+                                <div class="product-char__name">Глубина пропила</div>
+                                <div class="product-char__dots"></div>
+                                <div class="product-char__value">91 мм</div>
+                            </li>
+                            <li class="product-char">
+                                <div class="product-char__name">Диаметр посадочного отверстия</div>
+                                <div class="product-char__dots"></div>
+                                <div class="product-char__value">30 мм</div>
+                            </li>
+                            <li class="product-char">
+                                <div class="product-char__name">Источник питания</div>
+                                <div class="product-char__dots"></div>
+                                <div class="product-char__value">пластик</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__top">
+         <svg class="footer__logo">
+            <use xlink:href="./icons/sprite.svg#logo-footer"></use>
+        </svg>
+        <div class="footer__menu">
+            <span class="footer__menu-name">Каталог</span>
+            <ul class="footer__menu-list">
+                <li class="footer__menu-item"><a class="link-green" href="#">Кашпо</a></li>
+                <li class="footer__menu-item"><a class="link-green" href="#">Классика</a></li>
+                <li class="footer__menu-item"><a class="link-green" href="#">Цилиндры</a></li>
+                <li class="footer__menu-item"><a class="link-green" href="#">Технические</a></li>
+            </ul>
+        </div>
+        <div class="footer__menu">
+            <span class="footer__menu-name">Информация</span>
+            <ul class="footer__menu-list">
+                <li class="footer__menu-item"><a class="link-green" href="#">О нас</a></li>
+                <li class="footer__menu-item"><a class="link-green" href="#">Доставка</a></li>
+                <li class="footer__menu-item"><a class="link-green" href="#">Оплата</a></li>
+                <li class="footer__menu-item"><a class="link-green" href="#">Возврат</a></li>
+            </ul>
+        </div>
+        <div class="footer__contacts">
+            <div class="footer__contact">
+                <span class="footer__contact-name">Почта</span>
+                <a href="mailto:info@belono.ru" class="footer__contact-link link-green">info@belono.ru</a>
+            </div>
+            <div class="footer__contact">
+                <span class="footer__contact-name">Телефон</span>
+                <a href="tel:8 916 957 96 94" class="footer__contact-link link-green">8 916 957 96 94</a>
+            </div>
+            <div class="footer__socials">
+                <a href="#" class="socials__link">
+                    <svg class="socials__ico">
+                        <use xlink:href="./icons/sprite.svg#wa-green"></use>
+                    </svg>
+                </a>
+                <a href="#" class="socials__link">
+                    <svg class="socials__ico">
+                        <use xlink:href="./icons/sprite.svg#vk-green"></use>
+                    </svg>
+                </a>
+                <a href="#" class="socials__link">
+                    <svg class="socials__ico">
+                        <use xlink:href="./icons/sprite.svg#tg-green"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="separator"></div>
+    <div class="footer__bottom">
+        <ul class="footer__bottom-list">
+            <li class="footer__bottom-item">ООО “Белоно”</li>
+            <li class="footer__bottom-item">ИНН 5042165564</li>
+            <li class="footer__bottom-item">ОГРН 1245000110530</li>
+            <li class="footer__bottom-item">Юридический адрес:141305, Россия, Московская обл., г.о. Сергиево-посадский,г. Сергиев посад, ул.Строительная д.1, помещ. 6</li>
+        </ul>
+        <ul class="footer__bottom-list footer__bottom-list-2">
+            <li class="footer__bottom-item"><a href="#">Политика конфедициальности</a></li>
+            <li class="footer__bottom-item"><a href="#">Публичная оферта</a></li>
+            <li class="footer__bottom-item">Сделано в <a href="#" class="color-accent">Cosmo design</a></li>
+            <li class="footer__bottom-item">©2025 IMPAKT</li>
+        </ul>
+    </div>
+</footer>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

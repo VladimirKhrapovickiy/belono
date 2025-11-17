@@ -1,5 +1,5 @@
 .cookie{
-    position: absolute;
+    position: fixed;
     bottom: -30vh;
     left: vw(16px);
     z-index: 9999999;
@@ -34,4 +34,24 @@
 }
 .cookie-active{
     bottom: vw(16px);
+}
+.btn-green, .btn-white{
+    transition: .2s all ease-in-out;
+}
+.btn-green:hover , .btn-green:focus, .btn-green:active{
+    background-color: $color-accent-dark;
+}
+.btn-white:hover , .btn-white:focus, .btn-white:active{
+    background-color: $color-accent-light;
+    border: 1px solid $color-accent;
+    color: $color-accent;
+}
+.link-green{
+    transition: .2s all ease-in-out;
+}
+.link-green:hover , .link-green:focus, .link-green:active{
+    color: $color-accent;
+}
+.separator{
+    border-bottom: 1px solid $color-gray-medium;
 }

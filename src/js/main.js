@@ -1,4 +1,67 @@
 $(document).ready(function() {
+    window.scrollTo(0, 0);
+    const sliderThumbs = new Swiper(".slider__thumbs .swiper-container", {
+        direction: "vertical",
+        slidesPerView: "auto",
+        spaceBetween: 8,
+        freeMode: true,
+        });
+    const sliderImages = new Swiper(".slider__images .swiper-container", {
+        direction: "vertical",
+        slidesPerView: 1, 
+        spaceBetween: 32,
+        mousewheel: true,
+        grabCursor: true,
+        thumbs: {
+            swiper: sliderThumbs
+        },
+    });
+    const swiperMainPage = new Swiper(".swiper-main-page",{
+        direction: "vertical",
+        slidesPerView: 1, 
+        mousewheel: true,
+        grabCursor: true,
+        speed: 800,
+    });
+    swiperMainPage.on('beforeSlideChangeStart', function () {
+        if (swiperMainPage.realIndex === swiperMainPage.slides.length - 1) {
+             $('html, body').animate({
+                scrollTop: $(window).height(),
+            }, 800);
+        } 
+    });
+    //описания для товаров
+    const $descs = $(".product__info-desc");
+    if($descs.length >0){
+        $descs.each(function(){
+            const $item = $(this);
+            $item.on("click", function(){
+                $item.find(".product__info-desc_content").slideToggle();
+                $item.toggleClass("product__info-desc-active")
+            })
+        })
+    }
+    //кастомные селекты у товара 
+    const $productSelect = $(".product-select");
+    if($productSelect.length >0){
+        $productSelect.each(function(){
+            const $item = $(this);
+            $item.find(".product-select__current").on("click", function(){
+                $item.find(".product-select__vars").slideToggle();
+                $item.toggleClass("product-select-active")
+            })
+        })
+    }
+    //сортировка в каталоге
+    const $sortBtn = $(".sorting__current");
+    if($sortBtn.length > 0){
+        const $sortList = $(".sorting__list")
+        $sortBtn.on("click", function(){
+            $sortList.slideToggle();
+            $sortBtn.toggleClass("sorting__current-active")
+        })
+    }
+
     //попапы
     const $callPopup = $(".call-popup");
     if($callPopup.length>0){
@@ -54,68 +117,69 @@ $(document).ready(function() {
         },
     });
     //скролл слайдов (секций) на главной
-    const $slideshow  = $(".slideshow");
-    if($slideshow.length  > 0){
-        window.scrollTo(0, 0)
-        const $slides = $('.slide-section');
-        const coordinates =[0 , 100 , 200 , 300 , 400 , 500]
-        function slideDown(){
-            coordinates.forEach(function(el, i){
-                if(el > 0 ){
-                    coordinates[i] = el - 100;
-                } 
-            })
-            $slides.each(function(index){
-                $(this).css("top", `${coordinates[index]}vh`);
+    // const $slideshow  = $(".slideshow");
+    // if($slideshow.length  > 0){
+    //     window.scrollTo(0, 0);
+    //     $("html").css("overflow-y", "hidden")
+    //     const $slides = $('.slide-section');
+    //     const coordinates =[0 , 100 , 200 , 300 , 400 , 500]
+    //     function slideDown(){
+    //         coordinates.forEach(function(el, i){
+    //             if(el > 0 ){
+    //                 coordinates[i] = el - 100;
+    //             } 
+    //         })
+    //         $slides.each(function(index){
+    //             $(this).css("top", `${coordinates[index]}vh`);
                 
-            })
-            addDelay();
+    //         })
+    //         addDelay();
 
-        }
-        var isSlide = 1;
-        function addDelay(){
-            isSlide = 0;
-            setTimeout(function(){
-                isSlide = 1;
-            },2000)
-        }
-        function slideUp(){
-            var isSlided = 0;
-            coordinates.slice().reverse().forEach(function(el, i){
-                if(coordinates[coordinates.length -1 - i] < (coordinates.length -1 - i)*100 && !isSlided){
-                    if(el == 0){
-                        isSlided = 1;
-                    }
-                    coordinates[coordinates.length -1 - i] = el + 100;
-                } 
-            })
-            $slides.each(function(index){
-                $(this).css("top", `${coordinates[index]}vh`);
+    //     }
+    //     var isSlide = 1;
+    //     function addDelay(){
+    //         isSlide = 0;
+    //         setTimeout(function(){
+    //             isSlide = 1;
+    //         },2000)
+    //     }
+    //     function slideUp(){
+    //         var isSlided = 0;
+    //         coordinates.slice().reverse().forEach(function(el, i){
+    //             if(coordinates[coordinates.length -1 - i] < (coordinates.length -1 - i)*100 && !isSlided){
+    //                 if(el == 0){
+    //                     isSlided = 1;
+    //                 }
+    //                 coordinates[coordinates.length -1 - i] = el + 100;
+    //             } 
+    //         })
+    //         $slides.each(function(index){
+    //             $(this).css("top", `${coordinates[index]}vh`);
                 
-            })
-            addDelay();
-        }
-        $(window).on('wheel', function(event) {
-            if (event.originalEvent.deltaY < 0 && isSlide == 1) {
-                slideUp();
-            } else if (event.originalEvent.deltaY > 0 && isSlide == 1) {
-                slideDown();
-            }
-        });
-        let touchstartY = 0;
-        let touchendY = 0;
-        $(document).on('touchstart', function(e) {
-            touchstartY = e.originalEvent.touches[0].clientY;
-        });
-        $(document).on('touchmove', function(e) {
-        touchendY = e.originalEvent.touches[0].clientY;
-            if (touchendY < touchstartY && isSlide == 1) {
-                slideDown();
-            } else if (touchendY > touchstartY && isSlide == 1) {
-                slideUp();
-            }
-        });
-    }
+    //         })
+    //         addDelay();
+    //     }
+    //     $(window).on('wheel', function(event) {
+    //         if (event.originalEvent.deltaY < 0 && isSlide == 1) {
+    //             slideUp();
+    //         } else if (event.originalEvent.deltaY > 0 && isSlide == 1) {
+    //             slideDown();
+    //         }
+    //     });
+    //     let touchstartY = 0;
+    //     let touchendY = 0;
+    //     $(document).on('touchstart', function(e) {
+    //         touchstartY = e.originalEvent.touches[0].clientY;
+    //     });
+    //     $(document).on('touchmove', function(e) {
+    //     touchendY = e.originalEvent.touches[0].clientY;
+    //         if (touchendY < touchstartY && isSlide == 1) {
+    //             slideDown();
+    //         } else if (touchendY > touchstartY && isSlide == 1) {
+    //             slideUp();
+    //         }
+    //     });
+    // }
 
 
     //точки на главном экране

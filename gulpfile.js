@@ -8,7 +8,22 @@ const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify-es').default;
+const svgSprite = require('gulp-svg-sprite');
 
+//для генерации спрайта
+const config = {
+    mode: {
+        symbol: {
+            sprite: '../sprite.svg',
+        }
+    }
+};
+
+gulp.task('sprite',function(){
+    return gulp.src('src/icons/*.svg')
+        .pipe(svgSprite(config))
+        .pipe(gulp.dest('dist/icons/'));
+})
 
 
 gulp.task('server', function() {
@@ -56,7 +71,7 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('fonts', function () {
-    return gulp.src("src/fonts/**/*")
+    return gulp.src("src/fonts/**/*", { encoding: false })
         .pipe(gulp.dest("dist/fonts"));
 });
 
